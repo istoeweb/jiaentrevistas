@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avaliação Estruturada de Entrevistas</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="login">
+    <div class="card">
+      <h2>Entrar</h2>
+      <p class="muted">Sistema de Avaliação Estruturada de Entrevistas</p>
+      <div id="loginError"></div>
+      <label>E-mail</label>
+      <input id="loginEmail" type="email" value="rh@empresa.com" />
+      <label>Senha</label>
+      <input id="loginPassword" type="password" value="rh123" />
+      <div style="margin-top:14px"><button id="loginBtn">Entrar</button></div>
+      <p class="muted" style="margin-top:14px;font-size:12px">
+        Perfis de teste: admin@empresa.com/admin123 · rh@empresa.com/rh123 ·
+        igor@empresa.com/entrev123 · gestor@empresa.com/gestor123 · auditor@empresa.com/auditor123
+      </p>
+    </div>
+  </div>
+
+  <div id="app" class="hidden">
+    <aside id="sidebar">
+      <h1>Entrevistas</h1>
+      <div class="role" id="userInfo"></div>
+      <nav id="nav"></nav>
+      <div style="margin-top:20px"><button class="ghost small" id="logoutBtn">Sair</button></div>
+    </aside>
+    <main id="main"></main>
+  </div>
+
+  <div id="modalRoot"></div>
+  <script src="app.js"></script>
+</body>
+</html>
